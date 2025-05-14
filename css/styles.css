@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
-    background: linear-gradient(120deg, #181c24 0%, #23272f 100%);
+    background: black;
     line-height: 1.6;
 }
 
@@ -241,7 +241,7 @@ body {
 .content-version header {
     text-align: left;
     padding: 30px 0 20px 0;
-    background: linear-gradient(120deg, #181c24 0%, #23272f 100%);
+    background: black;
     border-radius: 28px;
     margin-bottom: 40px;
     position: relative;
@@ -353,10 +353,10 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(90deg, #ff9100 0%, #ffb347 100%);
+    background: #ff9100;
     color: #fff;
     border: none;
-    padding: 18px 38px;
+    padding: 12px 32px;
     border-radius: 32px;
     font-size: 1.2rem;
     cursor: pointer;
@@ -376,7 +376,7 @@ body {
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background: linear-gradient(90deg, #ffb347 0%, #ff9100 100%);
+    background: rgba(255, 145, 0, 0.28);
     transform: translateY(-2px) scale(1.04);
     box-shadow: 0 8px 32px 0 rgba(255, 145, 0, 0.28), 0 2px 12px 0 rgba(255, 255, 255, 0.12) inset;
     border-color: #ffb347;
@@ -517,7 +517,7 @@ body {
     min-height: 480px;
     display: flex;
     align-items: stretch;
-    background: linear-gradient(90deg, #181c24 60%, #23272f 100%);
+    background: black;
     margin-bottom: 40px;
     padding: 0;
     border-radius: 0 0 32px 32px;
@@ -681,4 +681,163 @@ body {
         padding: 10px 8px;
         font-size: 1rem;
     }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.promo-section {
+    background-color: black;
+    padding: 25px 0;
+    color: white;
+}
+
+.promo-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.promo-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .promo-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.promo-text {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .promo-text {
+        width: 50%;
+    }
+}
+
+.hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+}
+
+.orange-text {
+    color: #FE9900;
+}
+
+.promo-image {
+    width: 100%;
+    max-width: 630px;
+    height: auto;
+}
+
+.terms-box {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #FE9900;
+    border-radius: 1rem;
+}
+
+.terms-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.terms-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-top: 0.5rem;
+}
+
+.terms-list li {
+    color: #9CA3AF;
+    margin-bottom: 0.5rem;
+}
+
+.subscription-form {
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-number {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    font-size: 1.125rem;
+}
+
+@media (min-width: 1024px) {
+    .form-number {
+        width: 65px;
+        height: 65px;
+        font-size: 1.875rem;
+    }
+}
+
+.form-content {
+    flex-grow: 1;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    line-height: 130%;
+    font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+    .form-label {
+        font-size: 30px;
+        line-height: 130%;
+        font-weight: 700;
+    }
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.form-button {
+    background-color: #FE9900;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #e68a00;
 }
