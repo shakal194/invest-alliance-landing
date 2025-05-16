@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Referrer:', document.referrer);
     console.log('Определенный тип посетителя:', visitorType);
 });
-
+/*
 // Обновляем функцию addTestButtons для работы с URL
 function addTestButtons() {
     const testPanel = document.createElement('div');
@@ -186,4 +186,4 @@ function addTestButtons() {
     });
     
     document.body.appendChild(testPanel);
-} 
+} */
