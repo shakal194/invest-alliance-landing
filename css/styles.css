@@ -696,9 +696,10 @@ body {
 }
 
 .promo-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
-    font-size: 1.25rem;
-    font-weight: bold;
+
     margin-bottom: 20px;
 }
 
@@ -727,15 +728,8 @@ body {
 }
 
 .hero-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-@media (min-width: 1024px) {
-    .hero-title {
-        font-size: 2rem;
-        margin-bottom: 20px;
-    }
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 .orange-text {
@@ -840,4 +834,68 @@ body {
 
 .form-button:hover {
     background-color: #e68a00;
+}
+
+.btn-wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.profit-wrapper {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.profit-swiper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.profit-swiper .swiper-slide {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profit-swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.profit-swiper .swiper-button-next,
+.profit-swiper .swiper-button-prev {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profit-swiper .swiper-button-next:after,
+.profit-swiper .swiper-button-prev:after {
+    font-size: 20px;
+}
+
+.profit-swiper .swiper-pagination-custom {
+    bottom: -5px;
+    position: absolute;
+    left: 50%;
+}
+
+.profit-swiper .swiper-pagination-bullet {
+    background: #fff;
+}
+
+.profit-swiper .swiper-pagination-bullet-active {
+    background: #FE9900;
+}
+
+@media (max-width: 768px) {
+    .profit-swiper .swiper-slide {
+        height: 340px;
+    }
 }
